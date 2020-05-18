@@ -1,10 +1,10 @@
 body {
 	background-color: #ffcc66;
+	font-family: 'Autour One', cursive;
 }
 #content {
 	background-image: url(images/main.jpg);
 	background-size: cover;
-	height: 90vh;
 }
 
 .card {
