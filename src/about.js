@@ -1,4 +1,14 @@
 
+const createNavLink = (parentNode, linkName) => {
+  const linkItem = document.createElement('li');
+  linkItem.className = 'nav-item';
+  const link = document.createElement('a');
+  link.className = 'nav-link text-light';
+  link.textContent = linkName;
+  linkItem.appendChild(link);
+  parentNode.appendChild(linkItem);
+};
+
 const aboutModule = (parentNode) => {
   const titleDiv = document.createElement('div');
   titleDiv.className = 'row justify-content-center';
@@ -11,29 +21,9 @@ const aboutModule = (parentNode) => {
   const navigation = document.createElement('ul');
   navigation.className = 'nav justify-content-center';
 
-  const aboutItem = document.createElement('li');
-  aboutItem.className = 'nav-item';
-  const aboutLink = document.createElement('a');
-  aboutLink.className = 'nav-link text-light';
-  aboutLink.textContent = 'About';
-  aboutItem.appendChild(aboutLink);
-  navigation.appendChild(aboutItem);
-
-  const menuItem = document.createElement('li');
-  menuItem.className = 'nav-item';
-  const menuLink = document.createElement('a');
-  menuLink.className = 'nav-link text-light';
-  menuLink.textContent = 'Menu';
-  menuItem.appendChild(menuLink);
-  navigation.appendChild(menuItem);
-
-  const contactItem = document.createElement('li');
-  contactItem.className = 'nav-item';
-  const contactLink = document.createElement('a');
-  contactLink.className = 'nav-link text-light';
-  contactLink.textContent = 'Contact';
-  contactItem.appendChild(contactLink);
-  navigation.appendChild(contactItem);
+  createNavLink(navigation, 'About');
+  createNavLink(navigation, 'Menu');
+  createNavLink(navigation, 'Contact');
 
   parentNode.appendChild(navigation);
 
