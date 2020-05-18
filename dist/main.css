@@ -7,6 +7,10 @@ body {
 	background-size: cover;
 }
 
-.card {
+.custom-bg {
 	background: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4));
+}
+
+a {
+	cursor: pointer;
 }
