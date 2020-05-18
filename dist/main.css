@@ -1,0 +1,12 @@
+body {
+	background-color: #ffcc66;
+}
+#content {
+	background-image: url(images/main.jpg);
+	background-size: cover;
+	height: 90vh;
+}
+
+.card {
+	background: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4));
+}
