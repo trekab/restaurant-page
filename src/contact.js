@@ -2,7 +2,7 @@
 const contactModule = (parentNode) => {
   const contactForm = document.createElement('form');
   contactForm.className = 'custom-bg p-4 rounded';
-  
+
   const nameDiv = document.createElement('div');
   nameDiv.className = 'form-group';
   const nameLabel = document.createElement('label');
