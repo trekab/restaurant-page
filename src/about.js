@@ -3,7 +3,11 @@ const createNavLink = (parentNode, linkName) => {
   const linkItem = document.createElement('li');
   linkItem.className = 'nav-item';
   const link = document.createElement('a');
-  link.className = 'nav-link text-light';
+  if (linkName === 'About') {
+    link.className = 'nav-link text-light border-bottom';
+  } else {
+    link.className = 'nav-link text-light';
+  }
   link.textContent = linkName;
   linkItem.appendChild(link);
   parentNode.appendChild(linkItem);

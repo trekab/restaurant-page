@@ -16,9 +16,11 @@ const menuModule = (parentNode) => {
   const menuList = document.createElement('ul');
   menuList.className = 'list-group';
 
-  menuList.appendChild(createMenuItem('Kicommando', '$5'));
-  menuList.appendChild(createMenuItem('Fries', '$5'));
-  menuList.appendChild(createMenuItem('Rolex', '$5'));
+  menuList.appendChild(createMenuItem('Chicken', 'UGX 5000/='));
+  menuList.appendChild(createMenuItem('Fries', 'UGX 5000/='));
+  menuList.appendChild(createMenuItem('Burger', 'UGX 10000/='));
+  menuList.appendChild(createMenuItem('Chap', 'UGX 2000/='));
+  menuList.appendChild(createMenuItem('Samosa', 'UGX 1500/='));
   parentNode.appendChild(menuList);
 };
 
