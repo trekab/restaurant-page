@@ -1,5 +1,6 @@
 
 const contactModule = (parentNode) => {
+  const contactFormDiv = document.createElement('div');
   const contactForm = document.createElement('form');
   contactForm.className = 'custom-bg p-4 rounded';
 
@@ -61,7 +62,8 @@ const contactModule = (parentNode) => {
   submitButton.type = 'submit';
   contactForm.appendChild(submitButton);
 
-  parentNode.appendChild(contactForm);
+  contactFormDiv.appendChild(contactForm);
+  parentNode.appendChild(contactFormDiv);
 };
 
 
