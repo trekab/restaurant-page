@@ -13,6 +13,7 @@ const createMenuItem = (item, price) => {
 };
 
 const menuModule = (parentNode) => {
+  const menuDiv = document.createElement('div');
   const menuList = document.createElement('ul');
   menuList.className = 'list-group';
 
@@ -21,7 +22,8 @@ const menuModule = (parentNode) => {
   menuList.appendChild(createMenuItem('Burger', 'UGX 10000/='));
   menuList.appendChild(createMenuItem('Chap', 'UGX 2000/='));
   menuList.appendChild(createMenuItem('Samosa', 'UGX 1500/='));
-  parentNode.appendChild(menuList);
+  menuDiv.appendChild(menuList);
+  parentNode.appendChild(menuDiv);
 };
 
 
