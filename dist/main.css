@@ -1,0 +1,16 @@
+body {
+	background-color: #ffcc66;
+	font-family: 'Autour One', cursive;
+}
+#content {
+	background-image: url(images/main.jpg);
+	background-size: cover;
+}
+
+.custom-bg {
+	background: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4));
+}
+
+a {
+	cursor: pointer;
+}
